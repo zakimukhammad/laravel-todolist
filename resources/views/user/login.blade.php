@@ -13,7 +13,7 @@
 
 <body>
     <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-        @if (session('error'))
+        @if (isset($error))
             <div class="row">
                 <div class="alert alert-danger" role="alert">
                     {{ $error }}
